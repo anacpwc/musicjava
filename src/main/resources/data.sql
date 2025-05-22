@@ -1,0 +1,1 @@
+INSERT INTO TBL_MUSIC (BAND, GENDER, SINGER, TITLE) VALUES ('Maroon 5', 'Pop', 'Adam', 'Animals');

@@ -12,7 +12,6 @@ import jakarta.persistence.Table;
 @Table(name = "TBL_MUSIC")
 public class Music implements Serializable{
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,6 +20,7 @@ public class Music implements Serializable{
     private String singer;
     private String gender;
     private String band;
+    private String album;
     
     public Long getId() {
         return id;
@@ -30,6 +30,12 @@ public class Music implements Serializable{
     }
     public String getTitle() {
         return title;
+    }
+    public String getAlbum() {
+        return album;
+    }
+    public void setAlbum(String album) {
+        this.album = album;
     }
     public void setTitle(String title) {
         this.title = title;
